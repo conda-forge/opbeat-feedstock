@@ -1,6 +1,6 @@
 {% set name = "opbeat" %}
-{% set version = "3.5.2" %}
-{% set sha256 = "dda75e95ebeb7f470e654802325a63d5cbb278c4d0b6a03653b3693394342115" %}
+{% set version = "3.5.3" %}
+{% set sha256 = "32354c83171a67c76e837d41973c6964dce3c874ec7ef5cf47aaf8d7dd9fa7cb" %}
 
 package:
   name: {{ name|lower }}
