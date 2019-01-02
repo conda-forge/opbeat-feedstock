@@ -12,15 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1000
+  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python <3.7
+    - pip
   run:
-    - python
+    - python <3.7
     - django >=1.8
     - urllib3
     - certifi
